@@ -1,0 +1,55 @@
+.site-title {
+    color:white;
+}
+
+h1,footer {
+    background-color:#B57D85;
+    padding:20px;
+}
+
+h2 {
+    color: white;
+    border: 2px solid #B57D85;
+
+}
+
+.nav ul {
+    list-style: none;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    background-color:#8C4A54;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+
+}
+
+.nav ul li a:hover {
+    text-decoration: none;
+    background-color:#61232C;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-color:#E0D3D5;
+}
+
+.hobbies {
+    list-style: square;
+
+}
+
+.hobbies li:nth-child(odd) {
+    background-color:#8C4A54;
+}
+
+#my-image {
+    box-shadow:0px 0px 2px 1px black;
+}
