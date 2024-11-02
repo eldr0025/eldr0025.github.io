@@ -168,7 +168,8 @@ li {
 .contact-form {
     /* Creates a very thin black border surrounding the entire contact form */ 
     border:1px solid black;
-    /* Creates space between the inside of the contact form and the border*/    padding-left: 20px;
+    /* Creates space between the inside of the contact form and the border*/    
+    padding-left: 20px;
     padding-right: 40px;
     padding-top: 25px;
     padding-bottom: 15px;
