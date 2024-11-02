@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eldr0025 - Midterm</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="wrapper"> <!-- I used a div and class tag to target the entire body of code from here to the footer so I can apply a wrapper in CSS -->
+    
+    <header>
+        <h1>Lone Starfish</h1> <!-- This tag created the large heading that will go inside the image banner, important to know you can only use the h1 tag once -->
+        <img class="bg-image" src="images/lone-starfish-wide.jpg" alt="Starfish Wide"> <!-- Targeting the image to be position and made a banner in CSS, using "src" to pull the image from my side panel and using alt to make it accessible for everyone -->
+        
+        <nav class="navbar"> <!-- I typed class next to this nav tag to target this section so that I can apply CSS adjustments to it -->
+            <a href="index.html" class="nav-item">HOME</a> <!-- I used href along with setting id tags on corresponding sections to set up jump buttons -->
+            <a href="#story" class="nav-item">STORY</a> 
+            <a href="#contact-section" class="nav-item">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper"> <!-- I used a div and class tag to target the entire body of code from here to the footer so I can apply a wrapper in CSS -->
+        
+        <section id="story" class="story-section"> <!-- I set up an id so that I can use this for a jump button -->
+           <article>
+                <h2>Life of a Starfish</h2> <!-- This tag allowed me to type anything inside of it and it will display smaller than the h1 tag, although I can change the font size in CSS -->
+                <div class="story-content"> <!-- Targeted both the image and the text so I can modify them together in CSS to create a wrapping text effect -->
+                    <img src="images/lone-starfish.jpg" alt="Starfish" width="200" class="image-wrap"> <!-- Targeted the image so I can wrap it around the text in CSS -->
+                <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback. </p> <!-- This tag allows me to write anything inside it and it will display it as a block of text -->
+                </div>
+            </article>
+        </section>
+    
+        <section class="list-section">
+            <h3 class="list-header">Facts About Starfish</h3> <!-- h3 tag will automatically make the heading text display smaller than the h2 text (can be changed in CSS) -->
+            <ul> <!-- This tag creates an unordered list which automatically displays as bullet points -->
+                <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li> <!-- This tag is important as it allows you to insert these points into the ul -->
+                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+            </ul>
+        </section>
+
+        <section class="contact-section" id="contact-section"> <!-- Tagging and setting an id for this entire section so I can modify it as a whole and create a jump button for it -->
+            <h4>Contact to learn more</h4> <!-- Created another heading -->
+            <form class="contact-form"> <!-- Form tag lets the system know that I want to create a form of some sort -->
+               <div class="yname">
+                    <label for="yname">Your Name</label><br> <!-- Creates the text above the input box displaying "Your Name" -->
+                    <input type="text" name="yname" id="yname"> <!-- Creates the input box where you enter your name -->
+               </div> 
+
+               <div class="yemail">
+                    <label for="yemail">Your Email</label><br>
+                    <input type="text" name="yemail" id="yemail">
+               </div> 
+
+               <div class="ymessage">
+                    <label for="ymessage">Your Message</label><br>
+                    <textarea name="ymessage" id="ymessage" cols="90" rows="5"></textarea> <!-- This tag creates a box that can hold an unlimited amount of characters and cols and rows allow to change the size -->
+               </div>
+
+               <div class="starfish-visit">
+                    <p class="visit-question">Would you like to visit the starfish?</p> <!-- Paragraph tag allows me to ask a question above the multiple choice question which is perfect for what I am trying to do -->
+                    <label for="yes">Yes</label> <!-- Allows for text next to input circle -->
+                    <input type="radio" id="yes" name="starfish-visit"> <!-- Creates a clickable circle for input -->
+                    <label for="no">No</label> 
+                    <input type="radio" id="no" name="starfish-visit" value="no">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="starfish-visit" value="maybe">
+               </div>
+
+               <input type="submit" value="send"> <!-- Creates the final part of the contact form, the send button where you can click and it sends the information away -->
+            </form>
+        </section>
+        </div>
+    </main>
+    
+    <footer> <!-- Places footing text at the bottom of the page, usually used for copyright information -->
+        <p>&copy; Lone Starfish.</p> <!-- "&copy;" creates a copyright logo -->
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset code was used to overwrite the default styles of the browser */
+
+/* My CSS */
+
+body {
+    background-color: #aad4cf; /* Sets the background color of the entire website to this light blue color */
+    margin: 0; /* Ensures that the body is the correct size and has the right amount of space I want surrounding it, for example, I do not want any space between the banner and the wrapper on the top */
+    padding: 0; /* Ensures that I have no extra space that I do not want in the body */
+    font-family: Arial, sans-serif; /* Changes all the font in my website to the preferred font */
+      
+}
+
+.wrapper { /* The section of space outside of the body, creates a nice backing effect if you change the color */
+    max-width: 800px; /* Limits the width of the wrapper */
+    margin: 0 auto 20px; /* Centers the content vertically and horizontally */
+    background-color: #d4e9e7; /* Sets the color of the wrapper to a dark blue to create a nice contrast against the body */
+    /* Padding on all directions allows me to customize the amount of space between the ends of the sections and the end of the body */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+h1, h2 {
+	margin-top: 15px; /* Top and bottom margins change the amount of space surrounding the multiple headers that I selected */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3.2rem; /* Set the header font size relative to the font size of the root element */
+    color: white; /* Changed the color of the header to white to match the mockup */
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    /* Added spacing on each side of this header expect for the right side so that it is easier to look at and not too close to the contact sheet */
+    margin-bottom: 10px;
+    margin-top: 28px;
+    margin-left: -111px;
+}
+
+.bg-image {
+    transform: translate(-6.5%, -1%); /* Used this to center the banner properly */
+    width: 115%; /* Changed the width to fit the entire width of the body and leave no space on either side */
+    
+}
+
+header h1 {
+    z-index: 10; /* Allowed for the header to be displayed above the banner image instead of below it */
+    position: absolute;
+    top: 50%; /* Text positioning */
+    left: 50%;
+    transform: translate(-50%, -520%); /* Moves it left by 50% of it's own width, and up by 520% of its own height */
+}
+
+.navbar {
+    display: flex; /* Makes it a flexbox element */
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+}
+  
+.nav-item {
+    padding: 10px 125px; /* Change space between the jump buttons */
+    text-decoration: none; /*Removes underline and other elements */
+    color: black; /* Change color to black */
+    font-size: 18px; /* Change font size to match the mock up */
+}
+  
+.nav-item:not(:last-child) {
+    border-right: 1px solid black; /* Adds the line between jump buttons except the last one */
+}
+
+.story-section {
+    margin-left: -110px; /*Creating the right amount of space between the edge of the first paragraph and the end of the body */
+}
+
+.story-content {
+    width: 113%;  /* Allows to adjust the width of the first paragraph and to make it more dynamic with the picture */
+}
+  
+.image-wrap {
+    float: left; /* Makes the image float to the left of the text */
+    margin: 0 15px 18px 0; /* Adds space around the image */
+    width: 200px; /* Adjust width/size of the image */
+    height: auto; /* Automatically changes the height depending on it's content */
+}  
+
+.list-header {
+    /* Allows for adjustment of space around the list header */
+    margin-left: -20px;
+    margin-bottom: 13px;
+}
+
+.list-section {
+    /* Allows for adjustment of space around the list contents */
+    margin-left: -90px;
+    margin-top: 25px;
+}
+
+li {
+    /* Changes the list style back to bullet points after the reset code */
+    list-style-type:disc;
+    margin-left: -5px;
+}
+
+.contact-section {
+    clear: both;
+
+}
+
+.contact-form {
+    /* Creates a very thin black border surrounding the entire contact form */ 
+    border:1px solid black;
+    /* Creates space between the inside of the contact form and the border*/    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+   /* Creates space between the border and the edge of the body */
+    margin-left: -110px;
+    margin-right: -110px;
+}
+
+.contact-form label,
+.contact-form p {
+    line-height: 2; /* Changes space between each input bar */
+}
+
+.contact-form div {
+    margin-bottom: 20px; /* Adds space on the bottom of the contact form */
+}
+
+.contact-form .yname input,
+.contact-form .yemail input {
+    width: 100%; /* Changes width of the name and email input boxes to fill out the entire contact form */
+    padding: 10px; /* Adjusts space between edge of name and email input boxes and border of contact form */
+}
+
+.contact-form .ymessage textarea {
+    width: 100%; /* Adjusts width of message text area */
+    padding: 10px; /* Adjusts space between edge of message text area and border of contact form */
+    height: 80px; /* Adjusts height of message text area */
+    resize: vertical; /* Allows for user to only expand the area vertically, not horizontally */
+}
+
+.visit-question {
+    /* Adjusts spacing between the visit question and the yes, no and maybe buttons and the message text area */
+    margin-bottom: 10px;
+    margin-top: -10px;
+    /* Changes the font size of the question */
+    font-size: 19px;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: -50px; /* Adjusts space between send button and yes, no, maybe buttons */
+    padding: 6px; /* Adjusts space between the word "SEND" and the border of the send box */
+    background-color: #d4e9e7; /* Makes the background color of the send box the same color as the website body to blend in */
+    border:1px solid black; /* Creates a very thin black border around the send box */
+    cursor: pointer; /* When the cursor is hovering over the button, it changes the appearance of it to a pointer */
+    text-transform: uppercase; /* Turns the text into uppercase, ex; "send" --> "SEND" */
+}
+
+footer {
+	transform: translate(90%, -60%); /* Moves the footer from the left side of the website to the right side and moves it up a small amount to match the mock up using 90% and -60% */
+}
