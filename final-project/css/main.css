@@ -87,6 +87,10 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: 0.8rem;
+}
+
 p {
     font-size: 0.8rem;
 }
@@ -252,7 +256,7 @@ nav ul li a.current  {
 .service-card-4, 
 .service-card-5 {
     background-color: #ffe6ac;
-    padding-bottom: -10px;
+    padding-bottom: 70px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -350,7 +354,7 @@ nav ul li a.current  {
     padding-left: 10px;
 }
 
-.team-member {
+.team-info {
     background-color: #ffe6ac;
     padding-bottom: 2px;
     margin-left: 10px;
@@ -363,37 +367,35 @@ nav ul li a.current  {
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 100%;
 }
 
-.john img,
-.bob img{
+.bob img,
+.john img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.team-member h3 {
+.team-info h3 {
     color: #222;
     padding-top: 20px;
     padding-bottom: 15px;
     padding-left: 10px;
 }
 
-.team-member p {
+.team-info h4 {
+    color: #222;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: -6px;
+}
+
+.team-info p {
     color: #222;
     padding-left: 10px;
     padding-bottom: 30px;
-}
-
-.subtitle {
-    font-weight: bold;
-    margin-top: -5px;
-    border-bottom: 2px solid #c78c06;
-    margin-bottom: 10px; 
-    padding-bottom: 10px; 
-    border-bottom: 2px solid #c78c06; 
-    display: inline-block; 
-    width: 95%;
 }
 
 /* Contact Form */
@@ -663,7 +665,7 @@ footer p {
 
     /* Team Members */
     
-    .team {
+    .team-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -672,7 +674,7 @@ footer p {
             "c d";
     }
 
-    .team h3 {
+    .team-info h3 {
         padding: 10px 0 10px 0;
     }
 
@@ -682,6 +684,11 @@ footer p {
 
     .john-content {
         grid-area: b;
+        padding-left: 10px;
+    }
+
+    .john img {
+        height: 100%;
     }
 
     .bob {
@@ -690,12 +697,12 @@ footer p {
 
     .bob-content {
         grid-area: c;
+        padding-left: 10px;
     }
-
-	.john img, .bob img {
-		height: 100%;
-	}
     
+    .bob img {
+        height: 100%;
+    }
 }
 
 
