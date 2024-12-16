@@ -64,31 +64,31 @@ table {
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    color: #fff;
+    color: #fff; /* Causes the body to become white, can overlay colours in individual sections */
 }
 
 /*  Text Styles  */
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    padding-top: 45px;
-    line-height: 1.3; 
-    font-weight: bold;
+    font-size: 3rem; /* Making the header 1 bigger in size than h2 */
+    margin-bottom: 20px; /* Creating appropriate spacing */
+    padding-top: 45px; /* Creating appropriate spacing */
+    line-height: 1.3;  /* Creaitng appropriate spacing */
+    font-weight: bold; /* Gives the header a very pronounced bold effect that makes it stand out */
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Making the header 2 bigger in size than h3 */
     font-weight: bold;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Making the header 3 bigger in size than h4 */
     font-weight: bold;
 }
 
 h4 {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Making the header 4 bigger in size than paragraph text */
 }
 
 p {
@@ -98,46 +98,46 @@ p {
 /*  Nav Bar */
 
 .nav-bar {
-    background-color: #222;
-    text-align: center;
-    margin-bottom: -45px;
+    background-color: #222; /* Navigation bar main colour */
+    text-align: center; /* Centers all of the items in the nav bar */
+    margin-bottom: -45px; /* Creating appropriate spacing */
 }
 
 .nav-bar .wrapper {
-    padding: 10px;
+    padding: 10px; /* Creating appropriate spacing */
     margin: 0 auto 20px; /* Centers the content vertically and horizontally */
 }
 
 .yellow-box {
-    background: #c78c06;
-    height: 200px;
-    padding: 20px;
-    position: relative;
+    background: #c78c06; /* Creating the yellow box inside the nav bar */
+    height: 200px; /* Adjusting the size of the yellow box */
+    padding: 20px; /* Adjusting the size of the yellow box */
+    position: relative; 
 }
 
 .yellow-box img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: auto;
+    top: 0; /* Positioning the logo */
+    left: 0; /* Positioning the logo */
+    width: 100px; /* Sizing the logo */
+    height: auto; /* Sizing the logo */
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Creating a flex box */
+    flex-direction: column; /* Changing the nav list to vertical */
 }
 
 nav ul li a {
     padding: 20px;
-    color: #c78c06;
+    color: #c78c06; /* Extending the yellow box */
     font-size: 18px;
     text-decoration: none;
     display: block;
 }
 
 nav ul li a.current  {
-    color: #222;
+    color: #222; /* Adding the word "Home" inside of the yellow box */
     background-color: #c78c06;
 }
 
@@ -146,15 +146,15 @@ nav ul li a.current  {
 }
 
 .search-bar input {
-    height: 35px;
+    height: 35px; /* Search bar height */
     float: left;
-    width: calc(100% - 35px);
+    width: calc(100% - 35px); /* Fitting the magnifying glass icon on the same line */
 }
 
 .search-bar button {
     background-color: #222;
     color: #c78c06;
-    border: 1px solid #c78c06;
+    border: 1px solid #c78c06; /* Magnifying glass styling */
     height: 35px;
     width: 35px;
 }
@@ -167,11 +167,11 @@ nav ul li a.current  {
 }
 
 .banner {
-    background-image: url(../images/main-banner.jpg);
+    background-image: url(../images/main-banner.jpg); /* Banner image */
     padding: 200px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-size: cover; /* Making the cover fit the entire section */
+    background-position: center; /* Making the cover fit the entire section */
+    position: relative; /* Making the cover fit the entire section */
 }
 
 .banner-background {
@@ -179,7 +179,7 @@ nav ul li a.current  {
     position: absolute; 
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%; /* Creating a black transparent rectangle */
     height: 75%; 
     display: flex; 
     justify-content: center; 
@@ -190,10 +190,11 @@ nav ul li a.current  {
 }
 
 .banner-button a {
-    background-color: #c78c06;
+    background-color: #c78c06; /* Changing color of button */
     text-decoration: none;
     color: #222;
-    float: left;
+    float: left; /* Button positioning */
+    /* Spacing */ 
     padding: 20px;
     margin-top: 20px;
     margin-right: 0;
@@ -230,12 +231,14 @@ nav ul li a.current  {
 .about-us-img {
     padding: 10px;
     margin: 0;
+    /* Re-sizing image */
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .about-us-img img{
+    /* Re-sizing image */
     width: 100%;
     height: auto;
     display: block;
@@ -244,7 +247,8 @@ nav ul li a.current  {
 /* Services */
 
 .services h2 {
-    color: #222;
+    color: #222; /* Changing text color to black */
+    /* Creating comfortable space */
     padding-top: 30px;
     padding-bottom: 15px;
     padding-left: 10px;
@@ -255,6 +259,7 @@ nav ul li a.current  {
 .service-card-3, 
 .service-card-4, 
 .service-card-5 {
+    /* Creating the design for each service card */
     background-color: #ffe6ac;
     padding-bottom: 70px;
     margin-left: 10px;
@@ -263,12 +268,14 @@ nav ul li a.current  {
 }
 
 .product-img {
+    /* Making image fit the whole rectangle */
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .product-img img {
+    /* Making image fit the whole rectangle */
     width: 100%;
     height: auto;
     display: block;
@@ -279,6 +286,7 @@ nav ul li a.current  {
 .service-card-3 h3, 
 .service-card-4 h3, 
 .service-card-5 h3 {
+    /* Service card heading styles */
     color: #222;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -290,6 +298,7 @@ nav ul li a.current  {
 .service-card-3 p, 
 .service-card-4 p, 
 .service-card-5 p {
+    /* Service card paragraph styles */
     color: #222;
     padding-left: 10px;
     padding-bottom: 30px;
@@ -297,10 +306,11 @@ nav ul li a.current  {
 }
 
 .services-button a {
-    background-color: #222;
-    text-decoration: none;
+    background-color: #222; /* Creating a black button */
+    text-decoration: none; /* Removing underlining and blue color from button */
     color: white;
     float: left;
+    /* Spacing */
     padding: 30px;
     margin-top: -20px;
     margin-right: 0;
@@ -311,29 +321,34 @@ nav ul li a.current  {
 /* Our Visions */
 
 .vision {
-    background-image: url(../images/vision.jpg);
+    background-image: url(../images/vision.jpg); /* Inserting the visions picture into css for more control rather than html */
+    /* Spacing */
     padding-top: 60px;
     padding-bottom: 105px;
     padding-right: 60px;
     padding-left: 60px;
+    /* Resizing */
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .vision h2 {
+    /* Vision heading styles */
     margin-top: -30px;
     margin-bottom: 20px;
     margin-left: -45px;
 }
 
 .vision p {
+    /* Vision paragraph styles */
     margin-left: -45px;
     width: 125%;
 }
 
 .vision-button a {
-    background-color: #11253d;
+    /* Vision button styles */
+    background-color: #11253d; /* Coloured the button blue */
     border: 1px solid #c78c06;
     text-decoration: none;
     color: white;
@@ -348,6 +363,7 @@ nav ul li a.current  {
 /* Our Team */
 
 .team h2 {
+    /* Team section heading styles */
     color: #222;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -355,6 +371,7 @@ nav ul li a.current  {
 }
 
 .team-info {
+    /* Resizing the information */
     background-color: #ffe6ac;
     padding-bottom: 2px;
     margin-left: 10px;
@@ -364,6 +381,7 @@ nav ul li a.current  {
 
 .john,
 .bob {
+    /* Resizing the images */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -372,12 +390,14 @@ nav ul li a.current  {
 
 .bob img,
 .john img {
+    /* Resizing the images */
     width: 100%;
     height: auto;
     display: block;
 }
 
 .team-info h3 {
+    /* Team section heading 3 styles */
     color: #222;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -385,6 +405,7 @@ nav ul li a.current  {
 }
 
 .team-info h4 {
+    /* Team section heading 4 styles */
     color: #222;
     font-weight: bold;
     padding-left: 10px;
@@ -393,6 +414,7 @@ nav ul li a.current  {
 }
 
 .team-info p {
+    /* Team section paragraph styles */
     color: #222;
     padding-left: 10px;
     padding-bottom: 30px;
@@ -401,18 +423,21 @@ nav ul li a.current  {
 /* Contact Form */
 
 .contact-form h2 {
+    /* Contact form heading 2 styles */
     color: #222;
     padding-top: 30px;
     padding-bottom: 15px;
 }
 
 .contact-form h3 {
+    /* Contact form heading 3 styles */
     color: #222;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
 .contact-form {
+    /* General spacing */
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -420,32 +445,34 @@ nav ul li a.current  {
 
 .contact-form label,
 .contact-form p {
+    /* Specific spacing */
     line-height: 2; /* Changes space between each input bar */
     color: #222;
     font-size: 0.7rem;
 }
 
 .contact-form div {
+    /* Specific spacing */
     margin-bottom: 20px; /* Adds space on the bottom of the contact form */
 }
 
 .contact-form .fname input,
 .contact-form .email input {
     width: 100%; /* Changes width of the name and email input boxes to fill out the entire contact form */
-    padding: 10px; /* Adjusts space between edge of name and email input boxes and border of contact form */
+    padding: 10px; 
 }
 
 .contact-form .message textarea p {
     width: 100%; /* Adjusts width of message text area */
-    padding: 10px; /* Adjusts space between edge of message text area and border of contact form */
-    height: 100px; /* Adjusts height of message text area */
+    padding: 10px; 
+    height: 100px; 
     resize: vertical; /* Allows for user to only expand the area vertically, not horizontally */
 }
 
 .contact-form input[type="submit"] {
-    margin-top: -50px; /* Adjusts space between send button and yes, no, maybe buttons */
+    margin-top: -50px;
     padding: 3px; /* Adjusts space between the word "SEND" and the border of the send box */
-    background-color: #222; /* Makes the background color of the send box the same color as the website body to blend in */
+    background-color: #222; /* Makes the background color of the send box black */
     color: #c78c06;
     cursor: pointer; /* When the cursor is hovering over the button, it changes the appearance of it to a pointer */
 }
@@ -473,7 +500,7 @@ nav ul li a.current  {
     color: #222;
     font-size: 0.8rem;
     padding: 10px; 
-    border: 1px solid #222; 
+    border: 1px solid #222; /* Creating the border lines around the table */
     text-align: center; 
 }
 
@@ -481,7 +508,7 @@ nav ul li a.current  {
     color: #222;
     font-size: 0.7rem;
     padding: 10px; 
-    border: 1px solid #222;
+    border: 1px solid #222; /* Creating the border lines around the table */
 }
 
 /* Map */
@@ -491,6 +518,7 @@ nav ul li a.current  {
 }
 
 iframe {
+    /* Adjusting the size of the map by targeting its command */
     width: 100%;
     margin-bottom: -10px;
 }
@@ -498,6 +526,7 @@ iframe {
 /* Footer */
 
 footer {
+    /* Footer Styling */
     background-color: #222;
     color: #c78c06;
     padding-bottom: 5px;
@@ -505,6 +534,7 @@ footer {
 }
 
 footer p {
+    /* Footer Text Styling */
     padding-bottom: 10px;
     padding-left: 10px;
     line-height: 2.5;
@@ -518,38 +548,46 @@ footer p {
     /* Nav Bar */
 
     .nav-bar {
+        /* Horizontal spacing between nav bar items */
         justify-content: space-between;
     }
 
     .nav-bar .nav-bar ul {
+        /* Turning nav bar into a flex box */
         display: flex;
         align-items: center;
     }
 
     .nav-bar ul {
+        /* Changing nav bar from vertical to horizontal to fit desktop mode */
         flex-direction: row;
     }
 
     .nav-bar ul li a.current {
+        /* Spacing */
         padding: 20px;
         margin: 10px;
     }
 
     .yellow-box {
+        /* Spacing the yellow box */
         padding: 0px;
         margin: 0px;
         height: 0px;
     }
 
     .yellow-box img {
+        /* Positioning the logo */
         position: relative;
         float: left;
+        /* Sizing the logo */
         top: 15px;
         width: 75px;
         height: 75px;
     }
 
     .search-bar {
+        /* Changing the size of the search bar */
         height: 60px;
         width: 220px;
     }    
@@ -561,6 +599,7 @@ footer p {
     }
 
     .banner-background {
+        /* Resizing black transparent box */
         position: absolute;
         top: 0;
         left: 0;
@@ -575,6 +614,7 @@ footer p {
     }
 
     .banner-button a {
+        /* Resizing banner button */
         padding: 30px;
     }
 
@@ -587,6 +627,7 @@ footer p {
     }
     
     .about {
+        /* Spacing */
         padding-bottom: 50px;
         height: 247px;
         margin-top: 0px;
@@ -595,6 +636,7 @@ footer p {
     }
 
     .about-us-img {
+        /* Image re-sizing and spacing */
         margin-left: -58px;
         margin-top: -20px;
         height: 50%;
@@ -607,6 +649,7 @@ footer p {
     }
 
     .services h2 {
+        /* Services section heading 2 style */
         margin-left: 150px;
     }
 
@@ -621,12 +664,15 @@ footer p {
     }
 
     .services .wrapper {
+        /* Turning the services section into a grid layout */
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto 1fr;
         row-gap: 0px;
         column-gap: 0px;
     }
+
+    /* Changing the position and size for each individual card by targeting certain rows and columns to create the desired look */
 
     .services .wrapper .service-card-1 {
         grid-column: 1/4;
@@ -656,28 +702,29 @@ footer p {
     /* Vision */
 
     .vision {
+        /* Spacing */
         padding-left: 150px;
     }
 
     .vision p {
+        /* Paragraph sizing */
         width: 91%;
     }
 
     /* Team Members */
     
     .team-info {
+        /* Turning the team members section into a grid template area so I can the desired four square layout easier */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        /* Establishing layout with a,b,c,d */
         grid-template-areas: 
             "a b"
             "c d";
     }
 
-    .team-info h3 {
-        padding: 10px 0 10px 0;
-    }
-
+    /* Matching the pictures and information to the grid template layout */
     .john {
         grid-area: a;
     }
@@ -688,6 +735,7 @@ footer p {
     }
 
     .john img {
+        /* Image re-sizing */
         height: 100%;
     }
 
@@ -701,6 +749,7 @@ footer p {
     }
     
     .bob img {
+        /* Image re-sizing */
         height: 100%;
     }
 }
