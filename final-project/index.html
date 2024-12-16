@@ -4,152 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eldr0025 - Final Project</title>
+    <script src="https://kit.fontawesome.com/e57401f372.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-   <div class="wrapper"> <!-- I used a div class from the beginning of the body to the footer to create a wrapper I can customize in CSS -->
-
-   <header class="header">
-        <img src="images/logo.png" alt="company logo" width="70"> <!-- I put the logo in just above the navbar so I can place it in the correct spot in CSS -->
-        
-        <div class="navbar">
-        <nav>
-            <a href="#index.html" class="nav-item">Home</a> <!-- I used "a href" to create a button that when clicks jumps to the part of the page it represents. Great for a responsive website. -->
-            <a href="#about-section" class="nav-item">About Us</a>
-            <a href="#services-section" class="nav-item">Services</a>
-            <a href="#team-section" class="nav-item">Team</a>
-            <a href="#contact-section" class="nav-item">Contact</a>
-        </nav>
-        </div>  
-        
-        <div class="search-bar">
-        <input type="text" placeholder="Search"> <!-- Placeholder and input type commands are wonderful for creating a search bar that is interactive -->
+    <header class="nav-bar">
+        <div class="wrapper">
+            <div class="yellow-box">
+                <img src="images/logo.png" alt="company logo" width="70" class="heading-img"> <!-- I put the logo in just above the navbar so I can place it in the correct spot in CSS -->
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#index.html" class="current"><span>Home</span></a></li> <!-- I used "a href" to create a button that when clicks jumps to the part of the page it represents. Great for a responsive website. -->
+                    <li><a href="#about-section" class="nav-item">About Us</a></li>
+                    <li><a href="#services-section" class="nav-item">Services</a></li>
+                    <li><a href="#team-section" class="nav-item">Team</a></li>
+                    <li><a href="#contact-section" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search"> <!-- Placeholder and input type commands are wonderful for creating a search bar that is interactive -->
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
-   </header> 
+    </header> 
 
    <main>
-   <div class="banner">
-        <h1>Welcome to Three Star Media</h1> <!-- I used h1 so that the banner text is automatically bigger than any other text (can only use h1 once) -->
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ratione, id earum explicabo odit modi mollitia ullam omnis porro reiciendis asperiores exercitationem dicta officiis in rem nesciunt doloribus! Sint, iste.</p>
-        <button>Connect with us</button><br> <!-- I used the basic button command to replicate the buttons on the mockup throughout my code, I will stylize them in CSS -->
-        <img src="images/main-banner.jpg" alt="company workspace" width="600"> <!-- I inserted the main banner picture, will resize and modify in CSS -->
-   </div>
+    
+    <div class="banner">
+        <div class="banner-background">
+            <div class="wrapper">
+                <div class="banner-info">
+                    <h1>Welcome to Three Star Media</h1> <!-- I used h1 so that the banner text is automatically bigger than any other text (can only use h1 once) -->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ratione, id earum explicabo odit modi mollitia ullam omnis porro reiciendis asperiores exercitationem dicta officiis in rem nesciunt doloribus! Sint, iste.</p>
+                </div>
+                <div class="banner-button">
+                    <a href="#">Connect with us &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+                </div>
+            </div>
+        </div>
+    </div>
 
    <section class="about" id="about-section"> <!-- Using "id" allows me to insert "#about-section" into "a href" to create a jump button -->
-        <h2>About Us</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, soluta accusantium voluptatum provident exercitationem optio eius inventore omnis architecto iure, fugiat necessitatibus sint facere praesentium? Placeat, et cupiditate? Minima, voluptatibus.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, soluta accusantium voluptatum provident exercitationem optio eius inventore omnis architecto iure, fugiat necessitatibus sint facere praesentium? Placeat, et cupiditate? Minima, voluptatibus.</p>
-        <img src="images/about-us.jpg" alt="ping pong table" width="600">
+        <div class="wrapper">
+            <div class="about-us-img">
+                <img src="images/about-us.jpg" alt="ping pong table">
+            </div>
+            <div class="about-info">
+                <h2>About Us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, soluta accusantium voluptatum provident exercitationem optio eius inventore omnis architecto iure, fugiat necessitatibus sint facere praesentium? Placeat, et cupiditate? Minima, voluptatibus.</p> <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, soluta accusantium voluptatum provident exercitationem optio eius inventore omnis architecto iure, fugiat necessitatibus sint facere praesentium? Placeat, et cupiditate? Minima, voluptatibus.</p>
+            </div>
+        </div>
    </section>
 
    <section class="services" id="services-section">
         <h2>Our Services</h2>
-        <div class="service-card"> <!-- I used div class with the same "service-card" name through each service card so that I can easily apply the same styles to everything in this section -->
-            <img src="images/digital.jpg" alt="person using laptop and phone" width="290">
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-            <button>Digital Plans</button>
+        <div class="wrapper">
+            <div class="service-card-1"> <!-- I used div class with the same "service-card" name through each service card so that I can easily apply the same styles to everything in this section -->
+                <div class="product-img">
+                    <img src="images/digital.jpg" alt="person using laptop and phone">
+                </div>
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                <div class="services-button">
+                    <a href="#">Digital Plans &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+                </div>
+            </div>
+            <div class="service-card-2">
+                <div class="product-img">
+                    <img src="images/marketing.jpg" alt="laptop">
+                </div>
+                <h3>Marketing</h3> <!-- I used h3 as the smallest heading to differentiate certain sections from each other -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                <div class="services-button">
+                    <a href="#">Marketing Plans &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+                </div>
+            </div>
+            <div class="service-card-3">
+                <div class="product-img">
+                    <img src="images/video.jpg" alt="phone with youtube">
+                </div>
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                <div class="services-button">
+                    <a href="#">Video Plans &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+                </div>
+            </div>
+            <div class="service-card-4">
+                <div class="product-img">
+                    <img src="images/web.jpg" alt="phone on notebook"> <!-- I described each picture for better accessibility -->
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                <div class="services-button">
+                    <a href="#">Web Plans &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+                </div>
+            </div>
+            <div class="service-card-5">
+                <div class="product-img">
+                    <img src="images/print.jpg" alt="colorful news boxes">
+                </div>
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                <div class="services-button">
+                    <a href="#">Print Plans &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+                </div>
+            </div>
         </div>
-        <div class="service-card">
-            <img src="images/marketing.jpg" alt="laptop" width="290">
-            <h3>Marketing</h3> <!-- I used h3 as the smallest heading to differentiate certain sections from each other -->
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-            <button>Marketing Plans</button>
-        </div>
-        <div class="service-card">
-            <img src="images/video.jpg" alt="phone with youtube" width="200">
-            <h3>Video Production</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-            <button>Video Plans</button>
-        </div>
-        <div class="service-card">
-            <img src="images/web.jpg" alt="phone on notebook" width="200"> <!-- I described each picture for better accessibility -->
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-            <button>Web Plans</button>
-        </div>
-        <div class="service-card">
-            <img src="images/print.jpg" alt="colorful news boxes" width="200">
-            <h3>Print</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-            <button>Print Plans</button>
-        </div>
-   </section>
+    </section>
 
    <section class="vision">
         <h2>Our Vision</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ex voluptatem deleniti iure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fugiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
-        <button>Learn More</button><br>
-        <img src="images/vision.jpg" alt="paper origami" width="600"> <!-- Will turn this into a wide picture in CSS -->
+        <div class="vision-button">
+            <a href="#">Learn More &#9654;</a> <!-- I used this command to create a button that can work with some further coding -->
+        </div>
    </section>
 
    <section class="team" id="team-section">
-        <h2>Our Team</h2>
-        <div class="team-member"> <!-- Once again used the same class name for elements that I need to make look the same -->
-            <h3>John Doe</h3>
-            <p>CEO and Co-owner</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta pariatur quae sequi est impedit omnis iusto, aliquid obcaecati, laboriosam dolor voluptas consequuntur tenetur nihil vel laborum nisi porro esse enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ipsam aliquam prae.</p>
-            <img src="images/john.jpg" alt="company CEO" width="290">
-        </div>
-        <div class="team-member">
-            <h3>Bob Rite</h3>
-            <p>CFO and Co-owner</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta pariatur quae sequi est impedit omnis iusto, aliquid obcaecati, laboriosam dolor voluptas consequuntur tenetur nihil vel laborum nisi porro esse enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ipsam aliquam prae.</p>
-            <img src="images/bob.jpg" alt="company CFO" width="290">
+        <div class="wrapper">
+            <h2>Our Team</h2>
+            <div class="team-info"> <!-- Once again used the same class name for elements that I need to make look the same -->
+                    <div class="john">
+                        <img src="images/john.jpg" alt="company CEO" width="290">
+                    </div>
+                    <div class="john-content">
+                        <h3>John Doe</h3>
+                    <div class="subtitle">
+                        <p>CEO and Co-owner</p>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta pariatur quae sequi est impedit omnis iusto, aliquid obcaecati, laboriosam dolor voluptas consequuntur tenetur nihil vel laborum nisi porro esse enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ipsam aliquam prae.</p>
+                    </div>
+                
+                    <div class="bob">
+                        <img src="images/bob.jpg" alt="company CFO" width="290">
+                    </div>
+                    <div class="bob-content">
+                        <h3>Bob Rite</h3>
+                    <div class="subtitle">
+                        <p>CFO and Co-owner</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta pariatur quae sequi est impedit omnis iusto, aliquid obcaecati, laboriosam dolor voluptas consequuntur tenetur nihil vel laborum nisi porro esse enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ipsam aliquam prae.</p>
+                    </div>
+                </div>
+            </div>
         </div>
    </section>
 
    <section class="contact-form" id="contact-section">
-        <h2>Contact Us</h2>
-        <h3>Send us a message</h3>
-        <form class="contact-form"> <!-- Form command allows me to create a contact form where users can fill their information in and send a message to the company -->
-            <div class="fname">
-                 <label for="fname">Full Name</label><br> 
-                 <input type="text" name="fname" id="fname"> 
-            </div> 
+        <div class="wrapper">
+            <h2>Contact Us</h2>
+            <h3>Send us a message</h3>
+            <form class="contact-info"> <!-- Form command allows me to create a contact form where users can fill their information in and send a message to the company -->
+                <div class="fname">
+                    <label for="fname">Full Name</label><br> 
+                    <input type="text" name="fname" id="fname"> 
+                </div> 
 
-            <div class="email">
-                 <label for="email">Email</label><br>
-                 <input type="text" name="email" id="email">
-            </div> 
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email">
+                </div> 
 
-            <div class="message">
-                 <label for="message">Message</label><br>
-                 <textarea name="message" id="message" cols="40" rows="7"></textarea> <!-- Text area command will create an expandable area of text for the user to write a message -->
-            </div>
+                <div class="message">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="57" rows="7"></textarea> <!-- Text area command will create an expandable area of text for the user to write a message -->
+                </div>
 
-            <input type="submit" value="Send"> <!-- Send button -->
-        </form>
-        
-        <div class="map">
-            <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.795377420785!2d-75.7553692!3d45.3498449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732991659417!5m2!1sen!2sca" height="290" width="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- Above is an iframe command which allows me to insert the code of any area on Google Maps and will insert a working map into the website -->
-        </div>
-   </section>
-   
-   <section class="operation-hours-table">
+                <input type="submit" value="Send"> <!-- Send button -->
+            </form>
+            
+    <section class="operation-hours-table">
         <h3>Hours of operation</h3>
         <table> <!-- Table command allows me to create a table where I can display the hours that the company operates, will be stylized in CSS -->
             <thead>
                 <tr> <!-- "tr" command allows me to create individual rows -->
-                   <th>Days</th> <!-- "th" command is the heading elements within the rows -->
-                   <th>Hours</th>
+                    <th>Days</th> <!-- "th" command is the heading elements within the rows -->
+                    <th>Hours</th>
                 </tr>
             </thead> <!-- Main header of the table -->
             <tbody> <!-- Body section of the table -->
                 <tr>
-                   <td>Monday - Friday</td> <!-- "td" is the normal elements within the rows -->
-                   <td>9 AM - 6 PM</td>
+                    <td>Monday - Friday</td> <!-- "td" is the normal elements within the rows -->
+                    <td>9 AM - 6 PM</td>
                 </tr>
                 <tr>
-                   <td>Saturday - Sunday</td>
-                   <td>Closed</td>
-                 </tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                    </tr>
             </tbody>
         </table>
+    </section>
+
+        <div class="map">
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.795377420785!2d-75.7553692!3d45.3498449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732991659417!5m2!1sen!2sca" height="375" width="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Above is an iframe command which allows me to insert the code of any area on Google Maps and will insert a working map into the website -->
+        </div>
    </section>
+
    </main>
    </div> <!-- End of wrapper -->
    

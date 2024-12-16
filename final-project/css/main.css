@@ -1,0 +1,703 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset code was used to overwrite the default styles of the browser */
+
+/* --------- My CSS --------- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main Body Styles */
+
+.wrapper { /* The section of space outside of the body, creates a nice backing effect if you change the color */
+    max-width: 1200px; /* Limits the width of the wrapper */
+    margin: 0 auto 20px; /* Centers the content vertically and horizontally */
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+/*  Text Styles  */
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding-top: 45px;
+    line-height: 1.3; 
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+/*  Nav Bar */
+
+.nav-bar {
+    background-color: #222;
+    text-align: center;
+    margin-bottom: -45px;
+}
+
+.nav-bar .wrapper {
+    padding: 10px;
+    margin: 0 auto 20px; /* Centers the content vertically and horizontally */
+}
+
+.yellow-box {
+    background: #c78c06;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+}
+
+.yellow-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    padding: 20px;
+    color: #c78c06;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a.current  {
+    color: #222;
+    background-color: #c78c06;
+}
+
+.search-bar {
+    height: 60px;
+}
+
+.search-bar input {
+    height: 35px;
+    float: left;
+    width: calc(100% - 35px);
+}
+
+.search-bar button {
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    height: 35px;
+    width: 35px;
+}
+
+/* Banner */
+
+.banner .wrapper {
+    padding: 10px;
+    margin: 0 auto 20px; /* Centers the content vertically and horizontally */
+}
+
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    padding: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-background {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 75%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px; 
+    color: #fff;
+}
+
+.banner-button a {
+    background-color: #c78c06;
+    text-decoration: none;
+    color: #222;
+    float: left;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+/* About Us Section */
+
+.about-info .wrapper {
+    padding: 70px;
+    margin: 0 auto 20px; /* Centers the content vertically and horizontally */
+}
+
+.about {
+    background-color: #ffe6ac;
+    padding-bottom: 7px;
+}
+
+.about-info {
+    padding-left: 10px;
+}
+
+.about-info h2 {
+    color: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-info p {
+    color: #222;
+}
+
+.about-us-img {
+    padding: 10px;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about-us-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Services */
+
+.services h2 {
+    color: #222;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.service-card-1, 
+.service-card-2, 
+.service-card-3, 
+.service-card-4, 
+.service-card-5 {
+    background-color: #ffe6ac;
+    padding-bottom: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.product-img {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-card-1 h3, 
+.service-card-2 h3, 
+.service-card-3 h3, 
+.service-card-4 h3, 
+.service-card-5 h3 {
+    color: #222;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.service-card-1 p, 
+.service-card-2 p, 
+.service-card-3 p, 
+.service-card-4 p, 
+.service-card-5 p {
+    color: #222;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 0.7rem;
+}
+
+.services-button a {
+    background-color: #222;
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 30px;
+    margin-top: -20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Our Visions */
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    padding-top: 60px;
+    padding-bottom: 105px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.vision h2 {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: -45px;
+}
+
+.vision p {
+    margin-left: -45px;
+    width: 125%;
+}
+
+.vision-button a {
+    background-color: #11253d;
+    border: 1px solid #c78c06;
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 30px;
+    margin-top: 13px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: -45px;
+}
+
+/* Our Team */
+
+.team h2 {
+    color: #222;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.team-member {
+    background-color: #ffe6ac;
+    padding-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.john,
+.bob {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.john img,
+.bob img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-member h3 {
+    color: #222;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.team-member p {
+    color: #222;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.subtitle {
+    font-weight: bold;
+    margin-top: -5px;
+    border-bottom: 2px solid #c78c06;
+    margin-bottom: 10px; 
+    padding-bottom: 10px; 
+    border-bottom: 2px solid #c78c06; 
+    display: inline-block; 
+    width: 95%;
+}
+
+/* Contact Form */
+
+.contact-form h2 {
+    color: #222;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.contact-form h3 {
+    color: #222;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.contact-form {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form label,
+.contact-form p {
+    line-height: 2; /* Changes space between each input bar */
+    color: #222;
+    font-size: 0.7rem;
+}
+
+.contact-form div {
+    margin-bottom: 20px; /* Adds space on the bottom of the contact form */
+}
+
+.contact-form .fname input,
+.contact-form .email input {
+    width: 100%; /* Changes width of the name and email input boxes to fill out the entire contact form */
+    padding: 10px; /* Adjusts space between edge of name and email input boxes and border of contact form */
+}
+
+.contact-form .message textarea p {
+    width: 100%; /* Adjusts width of message text area */
+    padding: 10px; /* Adjusts space between edge of message text area and border of contact form */
+    height: 100px; /* Adjusts height of message text area */
+    resize: vertical; /* Allows for user to only expand the area vertically, not horizontally */
+}
+
+.contact-form input[type="submit"] {
+    margin-top: -50px; /* Adjusts space between send button and yes, no, maybe buttons */
+    padding: 3px; /* Adjusts space between the word "SEND" and the border of the send box */
+    background-color: #222; /* Makes the background color of the send box the same color as the website body to blend in */
+    color: #c78c06;
+    cursor: pointer; /* When the cursor is hovering over the button, it changes the appearance of it to a pointer */
+}
+
+/* Hours of Operation */
+
+.operation-hours-table {
+    margin-top: 10px;
+}
+
+.operation-hours-table h3 {
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.operation-hours-table table {
+    margin-top: -8px;
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left; 
+}
+
+.operation-hours-table th {
+    background-color: #ffe6ac;
+    color: #222;
+    font-size: 0.8rem;
+    padding: 10px; 
+    border: 1px solid #222; 
+    text-align: center; 
+}
+
+.operation-hours-table td {
+    color: #222;
+    font-size: 0.7rem;
+    padding: 10px; 
+    border: 1px solid #222;
+}
+
+/* Map */
+
+.map {
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+footer p {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 2.5;
+    font-size: 0.8rem;
+}
+
+/* Desktop Styling */
+
+@media screen and (min-width: 760px) {
+
+    /* Nav Bar */
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    .nav-bar .nav-bar ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar ul {
+        flex-direction: row;
+    }
+
+    .nav-bar ul li a.current {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .yellow-box {
+        padding: 0px;
+        margin: 0px;
+        height: 0px;
+    }
+
+    .yellow-box img {
+        position: relative;
+        float: left;
+        top: 15px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .search-bar {
+        height: 60px;
+        width: 220px;
+    }    
+    
+    /* Banner */
+
+    .banner .wrapper {
+        position: relative;
+    }
+
+    .banner-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 83%;
+        margin-left: 105px;
+        
+    }
+
+    .banner {
+        padding: 300px;
+    }
+
+    .banner-button a {
+        padding: 30px;
+    }
+
+    /* About Us */
+
+    .about .wrapper {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .about {
+        padding-bottom: 50px;
+        height: 247px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .about-us-img {
+        margin-left: -58px;
+        margin-top: -20px;
+        height: 50%;
+    }
+
+    /* Services */
+
+    .services {
+        margin-top: 10px;
+    }
+
+    .services h2 {
+        margin-left: 150px;
+    }
+
+    .services .wrapper {
+        margin-left: 150px;
+        margin-right: 94px;
+        display: grid;
+    }
+
+    .service-card {
+        padding-bottom: 0px;
+    }
+
+    .services .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto 1fr;
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+
+    .services .wrapper .service-card-1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .services .wrapper .service-card-2 {
+        grid-column: 4/7;
+        grid-row: 1/2;
+    }
+
+    .services .wrapper .service-card-3 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .services .wrapper .service-card-4 {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+
+    .services .wrapper .service-card-5 {
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+
+    /* Vision */
+
+    .vision {
+        padding-left: 150px;
+    }
+
+    .vision p {
+        width: 91%;
+    }
+
+    /* Team Members */
+    
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "a b"
+            "c d";
+    }
+
+    .team h3 {
+        padding: 10px 0 10px 0;
+    }
+
+    .john {
+        grid-area: a;
+    }
+
+    .john-content {
+        grid-area: b;
+    }
+
+    .bob {
+        grid-area: d;
+    }
+
+    .bob-content {
+        grid-area: c;
+    }
+
+	.john img, .bob img {
+		height: 100%;
+	}
+    
+}
+
+
+
+
