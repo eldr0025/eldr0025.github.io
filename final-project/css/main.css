@@ -422,54 +422,56 @@ nav ul li a.current  {
 
 /* Contact Form */
 
-.contact-form h2 {
+.contact-section h2 {
     /* Contact form heading 2 styles */
     color: #222;
     padding-top: 30px;
     padding-bottom: 15px;
+    margin-left: 10px;
 }
 
-.contact-form h3 {
+.contact-section h3 {
     /* Contact form heading 3 styles */
     color: #222;
     padding-top: 15px;
     padding-bottom: 10px;
+    margin-left: 10px;
 }
 
-.contact-form {
+.contact-info {
     /* General spacing */
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.contact-form label,
-.contact-form p {
+.contact-info label,
+.contact-info p {
     /* Specific spacing */
     line-height: 2; /* Changes space between each input bar */
     color: #222;
     font-size: 0.7rem;
 }
 
-.contact-form div {
+.contact-info div {
     /* Specific spacing */
     margin-bottom: 20px; /* Adds space on the bottom of the contact form */
 }
 
-.contact-form .fname input,
-.contact-form .email input {
+.contact-info .fname input,
+.contact-info .email input {
     width: 100%; /* Changes width of the name and email input boxes to fill out the entire contact form */
     padding: 10px; 
 }
 
-.contact-form .message textarea p {
+.contact-info .message textarea {
     width: 100%; /* Adjusts width of message text area */
     padding: 10px; 
     height: 100px; 
     resize: vertical; /* Allows for user to only expand the area vertically, not horizontally */
 }
 
-.contact-form input[type="submit"] {
+.contact-info input[type="submit"] {
     margin-top: -50px;
     padding: 3px; /* Adjusts space between the word "SEND" and the border of the send box */
     background-color: #222; /* Makes the background color of the send box black */
@@ -479,23 +481,27 @@ nav ul li a.current  {
 
 /* Hours of Operation */
 
-.operation-hours-table {
+.company-hours {
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.operation-hours-table h3 {
+.company-hours h3 {
     font-weight: bold;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
-.operation-hours-table table {
+.company-hours table {
     margin-top: -8px;
     width: 100%; 
     border-collapse: collapse; 
     text-align: left; 
 }
 
-.operation-hours-table th {
+.company-hours th {
     background-color: #ffe6ac;
     color: #222;
     font-size: 0.8rem;
@@ -504,7 +510,7 @@ nav ul li a.current  {
     text-align: center; 
 }
 
-.operation-hours-table td {
+.company-hours td {
     color: #222;
     font-size: 0.7rem;
     padding: 10px; 
@@ -515,6 +521,14 @@ nav ul li a.current  {
 
 .map {
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.map h3 {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 iframe {
@@ -547,12 +561,20 @@ footer p {
 
     /* Nav Bar */
 
-    .nav-bar {
-        /* Horizontal spacing between nav bar items */
-        justify-content: space-between;
+    .nav-bar .wrapper {
+        display: flex;
+        align-items: center;
+       justify-content: space-evenly;
+        width: 100%; /* Ensure it takes full width */
     }
 
-    .nav-bar .nav-bar ul {
+    .nav-bar {
+        /* Horizontal spacing between nav bar items */
+        padding-bottom: 50px;
+    }
+
+    .nav-bar,
+    .nav-bar ul {
         /* Turning nav bar into a flex box */
         display: flex;
         align-items: center;
@@ -561,6 +583,8 @@ footer p {
     .nav-bar ul {
         /* Changing nav bar from vertical to horizontal to fit desktop mode */
         flex-direction: row;
+        column-gap: 30px;
+        margin: 0 20px 0 20px;
     }
 
     .nav-bar ul li a.current {
@@ -579,8 +603,9 @@ footer p {
     .yellow-box img {
         /* Positioning the logo */
         position: relative;
-        float: left;
         /* Sizing the logo */
+        margin-top: -50px;
+        margin-right: -40px;
         top: 15px;
         width: 75px;
         height: 75px;
@@ -590,12 +615,18 @@ footer p {
         /* Changing the size of the search bar */
         height: 60px;
         width: 220px;
+        margin-bottom: -25px;
     }    
     
     /* Banner */
 
     .banner .wrapper {
         position: relative;
+    }
+
+    .banner h1 {
+        font-size: 4.5rem;
+        width: 70%;
     }
 
     .banner-background {
@@ -615,7 +646,8 @@ footer p {
 
     .banner-button a {
         /* Resizing banner button */
-        padding: 30px;
+        padding: 35px;
+        font-size: 1.2rem;
     }
 
     /* About Us */
@@ -659,8 +691,17 @@ footer p {
         display: grid;
     }
 
-    .service-card {
-        padding-bottom: 0px;
+    .service-card-1,
+    .service-card-2 {
+        padding-bottom: 50px;
+        height: 575px;
+    }
+
+    .service-card-3,
+    .service-card-4,
+    .service-card-5 {
+        padding-bottom: 50px;
+        height: 465px;
     }
 
     .services .wrapper {
@@ -713,15 +754,25 @@ footer p {
 
     /* Team Members */
     
+    .team-info,
+    .team-member,
+    .john,
+    .bob {
+    padding: 0;
+    margin: 0;
+    }
+
     .team-info {
-        /* Turning the team members section into a grid template area so I can the desired four square layout easier */
+        /* Turning the team members section into a grid template area so I can create the desired four square layout easier */
         display: grid;
+        height: 817px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        gap: 0; /* No gap between grid areas */
         /* Establishing layout with a,b,c,d */
         grid-template-areas: 
-            "a b"
-            "c d";
+            "a c"
+            "b d";
     }
 
     /* Matching the pictures and information to the grid template layout */
@@ -730,30 +781,110 @@ footer p {
     }
 
     .john-content {
-        grid-area: b;
+        grid-area: c;
         padding-left: 10px;
-    }
-
-    .john img {
-        /* Image re-sizing */
-        height: 100%;
+        transform: translateY(-140px);
+        width: 95%;
     }
 
     .bob {
         grid-area: d;
+        transform: translateY(-140px); /* Moves the map 10px up */
     }
 
     .bob-content {
         grid-area: c;
         padding-left: 10px;
+        width: 95%;
+    }
+
+    .john img {
+        height: 75%;
+        object-fit: cover; /* Maintain aspect ratio and fill the container */
+        display: block; /* Remove any inline whitespace */
     }
     
     .bob img {
-        /* Image re-sizing */
         height: 100%;
+        object-fit: cover; /* Maintain aspect ratio and fill the container */
+        display: block; /* Remove any inline whitespace */
     }
+
+    .team-info {
+        grid-gap: 0; /* Ensures no gap between grid cells */
+    }
+
+    /* Contact Us */
+
+    .contact-section h2 {
+        /* Contact form heading 2 styles */
+        color: #222;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        margin-left: 167px;
+    }
+    
+    .contact-section h3 {
+        /* Contact form heading 3 styles */
+        color: #222;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-left: 167px;
+    }
+
+    .contact-info .fname input,
+    .contact-info .email input {
+    width: 100%; /* Changes width of the name and email input boxes to fill out the entire contact form */
+    padding: 10px; 
+    }
+
+    .contact-info .message textarea {
+    width: 100%; /* Adjusts width of message text area */
+    padding: 10px; 
+    height: 100px; 
+    resize: vertical; /* Allows for user to only expand the area vertically, not horizontally */
+    }
+
+    .company-hours h3 {
+        margin-left: 0px;
+    }
+
+    .company-hours th {
+        padding: 15px;
+    }
+
+    .company-hours td {
+        padding: 15px; 
+    }
+
+    .map h3 {
+        margin-left: 0px;
+    }
+
+    .contact-section .wrapper {
+        /* Turning the map and contact form sections into a grid template area so I can create the desired two square layout easier */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Establishing layout with a,b,c,d */
+        grid-template-areas: 
+            "a b"
+            "c c";
+    }
+
+    .contact-info {
+        grid-area: a;
+        align-self: start; /* Align the contact form to the top */
+        margin-right: 5px;
+    }
+
+    .map {
+        grid-area: b;
+        align-self: start; /* Aligns the map to the top of its grid area */
+        margin-top: -60px; /* Removes any margin that might interfere */
+    }
+
+    .company-hours {
+        grid-area: c;
+    }
+
 }
-
-
-
-
